@@ -269,7 +269,16 @@ This project is named `waku2-ai-protocol`.
 
 It is unrelated to Waku / WAKU2 networking or messaging protocols.
 
-The `waku2` name refers to the waku2 project and educational work by **島田 英紀 (`Hideki Shimada`)**.
+The project name is composed of three parts:
+
+* `waku2`: the waku2 project and related educational work;
+* `ai`: AI collaboration workflows;
+* `protocol`: a protocol note and vocabulary.
+
+Maintainer:
+
+* **島田 英紀**
+* English notation: `Hideki Shimada`
 
 ---
 
