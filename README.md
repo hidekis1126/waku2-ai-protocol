@@ -252,10 +252,10 @@ It is a small protocol note and vocabulary for human-governed AI collaboration w
 
 This project is intended to be complementary to existing AI and workflow technologies.
 
-* UI/event protocols can help applications display agent activity.
-* Workflow engines can help implement durable execution.
-* Agent frameworks can help coordinate tools and models.
-* Governance systems can help manage policy, audit, and organizational control.
+* **AG-UI** focuses on the event-based connection between AI agents and user-facing applications. `waku2-ai-protocol` focuses on durable workflow state, human approval gates, and teachable role/state vocabulary.
+* **LangGraph** and **Temporal** provide practical approaches for persistence, interrupts, and durable execution. `waku2-ai-protocol` is not a workflow engine; it describes a small vocabulary that can be implemented on top of such systems.
+* **EGAP** focuses on governance concerns such as authentication, authorization, audit, approvals, and alerts. `waku2-ai-protocol` is smaller and education-oriented, but it shares the belief that AI agent actions should be governed and auditable.
+* **Waku / WAKU2** networking and messaging protocols are unrelated to this project.
 
 `waku2-ai-protocol` focuses on a smaller educational layer: how to describe a human-governed AI collaboration workflow in a way that is understandable, reviewable, and teachable.
 
@@ -290,6 +290,20 @@ It is written from the belief that AI should not merely automate human work, but
 
 The protocol vocabulary is intentionally small because it should be possible to teach it to non-specialists, students, small teams, and people who are learning how to collaborate with AI.
 
+## 日本語メモ
+
+`waku2-ai-protocol` は、AIに人間の判断を預けきるためのものではありません。
+人がAIとともに考え、確かめ、学び、決め、そして人としての尊厳を保ったまま
+前に進むための、小さな設計の作法です。
+
+AIの動きはイベントで「見せる」。
+信頼してよい状態は、永続的な記録に「残す」。
+止まるべきところでは、人の承認を「待つ」。
+
+この語彙をあえて小さく保つのは、専門家でなくても——
+学生でも、小さなチームでも、これから学ぶ人でも——
+教えられるものであってほしいからです。
+
 ---
 
 ## Roadmap
@@ -323,5 +337,7 @@ Issues and discussions may be opened in the future after the project direction b
 ## License
 
 Apache License 2.0.
+
+Copyright 2026 Hideki Shimada (島田 英紀).
 
 See [LICENSE](./LICENSE).
