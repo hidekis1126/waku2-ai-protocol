@@ -16,7 +16,7 @@ It starts from a simple idea:
 * human approval should be a first-class part of AI workflows;
 * AI collaboration should be explainable enough to teach.
 
-This project is proposed and maintained by **Hideki Shimada (島田 英紀)**, founder of **waku2 / waku2プログラミングスクール**.
+This project is proposed and maintained by **島田 英紀 (`Hideki Shimada`)**, founder of **waku2 / waku2プログラミングスクール**.
 
 ---
 
@@ -269,11 +269,11 @@ This project is named `waku2-ai-protocol`.
 
 It is unrelated to Waku / WAKU2 networking or messaging protocols.
 
-The `waku2` name refers to the waku2 project and educational work by Hideki Shimada (島田 英紀).
+The `waku2` name refers to the waku2 project and educational work by **島田 英紀 (`Hideki Shimada`)**.
 
 ---
 
-## Japan-origin and education-informed note
+## Japan-origin note
 
 `waku2-ai-protocol` is a Japan-origin protocol note shaped by education, small-business practice, software development, and human-centered AI collaboration.
 
