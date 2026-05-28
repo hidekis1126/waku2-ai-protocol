@@ -273,7 +273,7 @@ The `waku2` name refers to the waku2 project and educational work by Hideki Shim
 
 ---
 
-## Japan-origin note
+## Japan-origin and education-informed note
 
 `waku2-ai-protocol` is a Japan-origin protocol note shaped by education, small-business practice, software development, and human-centered AI collaboration.
 
