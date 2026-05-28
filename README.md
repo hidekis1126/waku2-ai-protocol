@@ -269,7 +269,7 @@ This project is named `waku2-ai-protocol`.
 
 It is unrelated to Waku / WAKU2 networking or messaging protocols.
 
-The `waku2` name refers to the waku2 project and educational work by Hideki Shimada.
+The `waku2` name refers to the waku2 project and educational work by Hideki Shimada (島田 英紀).
 
 ---
 
