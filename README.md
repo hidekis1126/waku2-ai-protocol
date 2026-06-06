@@ -83,6 +83,12 @@ Human review should not be treated as an external interruption or an afterthough
 
 A workflow should be able to reach an `approval_required` state, pause safely, show the relevant context, and resume after a human decision.
 
+Human approval should be placed where it has real value.
+
+Not every AI action needs the same level of approval. Reversible, local, auditable work may be delegated to AI and reviewed after the fact, while irreversible, external, high-impact, privacy-sensitive, privilege-changing, production-like, or novel decisions should require explicit human approval.
+
+The value of approval is not its frequency, but its placement.
+
 ### 3. Roles make collaboration teachable
 
 AI collaboration becomes easier to understand when responsibilities are named.
@@ -318,7 +324,7 @@ Possible future work includes:
 * comparison notes with related protocols and frameworks;
 * a small reference implementation;
 * SDK or CLI experiments;
-* integration with future waku2-gateway work.
+* integration with future workflow implementations.
 
 No timeline is guaranteed.
 
