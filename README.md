@@ -4,8 +4,11 @@ A teachable protocol note for human-governed AI collaboration workflows.
 
 > SSE event = notification
 > DB state = source of truth
+>
+> review/zip = proposal
+> commit = reality
 
-AI workflows should feel alive through streaming events, but they should be trusted through durable state.
+AI workflows should feel alive through streaming events, but they should be trusted through durable state. In the same way, review artifacts are only proposals — reality is what has been committed and run.
 
 `waku2-ai-protocol` is an experimental protocol note for designing AI collaboration workflows that can be paused, reviewed, approved, resumed, audited, and taught.
 
@@ -34,15 +37,22 @@ Version `v0.1.0` is intended to publish a small vocabulary and design direction 
 
 ```txt
 SSE event = notification
-DB state = source of truth
+DB state  = source of truth
+
+review/zip = proposal
+commit     = reality
 ```
 
 In many AI applications, streaming output makes the system feel alive. However, streaming alone should not be treated as the final truth of the workflow.
+
+The same caution applies to review artifacts. A reviewed diff, an approved package, or a written document feels like progress, but it should not be treated as reality until it is committed and run.
 
 In this protocol note:
 
 * **SSE events** are used to notify the user interface about progress, messages, and state transitions.
 * **Durable state** such as database records is treated as the source of truth.
+* **Review artifacts** such as diffs, packages, and documents are treated as proposals, not as reality.
+* **Committed, executed, verified state** is treated as the reality of the work.
 * **Approval decisions, artifacts, usage, and final results** should be recorded durably.
 * **Human approval gates** should be explicit, inspectable, and resumable.
 
@@ -106,6 +116,23 @@ Artifacts should be reviewable and connected to the workflow state that produced
 AI workflows often involve cost, credits, rate limits, or provider usage.
 
 This protocol note treats usage events as part of the workflow vocabulary, so users and operators can understand what happened.
+
+### 6. Artifacts are proposals; reality is committed state
+
+A reviewed diff, an approved zip, a written document — these are *proposals*, not *reality*. Reality is only what has been written to actual files, executed, and verified.
+
+In AI collaboration, the quietest and deepest waste of time comes from a single confusion: treating an artifact as if it were already real. A review that passed does not mean the code entered the working tree. A package that was approved does not mean it was committed. A plan that was written does not mean it was run.
+
+So the workflow should always ask: **Is this a proposal, or is it reality? Was it committed? Was it run?**
+
+This principle mirrors the core rule. Just as a streaming event is a notification and durable state is the source of truth, a review artifact is a proposal and the committed working tree is the source of truth.
+
+| 日本語 | English |
+| --- | --- |
+| レビューより現物 | Review describes; the working tree decides. |
+| zip より作業ツリー | A package is a proposal; the tree is the truth. |
+| 承認より commit | Approval permits; only commit changes reality. |
+| 診断より実行確認 | Diagnose less; let a human run it once. |
 
 ---
 
@@ -305,6 +332,8 @@ The protocol vocabulary is intentionally small because it should be possible to 
 AIの動きはイベントで「見せる」。
 信頼してよい状態は、永続的な記録に「残す」。
 止まるべきところでは、人の承認を「待つ」。
+そして——レビューや承認は「提案」にすぎません。
+現実とは、実ファイルに入り、commit され、動いたものだけを指します。
 
 この語彙をあえて小さく保つのは、専門家でなくても——
 学生でも、小さなチームでも、これから学ぶ人でも——
